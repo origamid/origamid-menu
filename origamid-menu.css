@@ -1,0 +1,88 @@
+/* Menu Styles */
+#origamid-menu {
+	visibility: hidden;
+	position: absolute;
+	background: black;
+	width: auto;
+	max-width: 280px;
+	padding: 20px;
+	right: 0;
+	top: 50px;
+	text-align: left;
+	opacity: 0;
+	transform: translate(-20px, 0px);
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,.4);
+}
+
+#origamid-menu.active {
+  visibility: visible;
+	opacity: 1;
+	transform: translate(0px, 0px);
+	transition: .3s ease;
+}
+
+#origamid-menu li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	border-top: 2px solid;
+}
+
+#origamid-menu li:last-of-type {
+	border-bottom: 2px solid;
+}
+
+#origamid-menu li a {
+	display: block;
+	float: none;
+	padding: 10px;
+	margin: 0px;
+	border: none;
+	min-width: 140px;
+}
+
+#origamid-menu li a:hover {
+	background: white;
+	color: black;
+}
+
+/* Menu Icon */
+#origamid-icon {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 30px;
+	padding: 5px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+#origamid-icon::before, #origamid-icon::after {
+	content: '';
+	display: block;
+	height: 4px;
+	transition: .3s;
+}
+
+#origamid-icon::before {
+	background: white;
+	margin-bottom: 8px;
+}
+
+#origamid-icon::after {
+	box-shadow: 0 4px 0 0 white, 0 -4px 0 0 white;
+}
+
+#origamid-icon.active::before, #origamid-icon.active::after {
+	width: 80%;
+	background: white;
+	box-shadow: none;
+}
+
+#origamid-icon.active::before {
+	transform: rotate(45deg) translate(7px, 4px);
+}
+
+#origamid-icon.active::after {
+	transform: rotate(-225deg) translate(-4px, 1px);
+}
