@@ -15,7 +15,7 @@ $('ul').origamidMenu({
 
 1 - Adicione os arquivos .css e .js (necessário jQuery)
 
-2 - Seleciona a ul do menu principal
+2 - Selecionar a ul do menu principal. Ex: $('ul')
 
 3 - Definir as opções
 
