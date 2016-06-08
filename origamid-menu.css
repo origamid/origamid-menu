@@ -12,6 +12,7 @@
 	opacity: 0;
 	transform: translate(-20px, 0px);
 	box-shadow: 0 2px 1px 0 rgba(0,0,0,.4);
+	z-index: 999;
 }
 
 #origamid-menu.active {
